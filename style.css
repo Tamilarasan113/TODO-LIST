@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  padding: 0%;
+  margin: 0%;
+  user-select: none;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  min-height: 100dvh;
+  background: linear-gradient(to right, #821acc, #1d9ce5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  border-radius: 5px;
+  /* border: 1.5px solid #fff; */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 450px;
+  min-height: 10px;
+  flex-direction: column;
+}
+.add-tasks {
+  width: 100%;
+  background-color: #fff;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: center;
+  gap: 13px;
+  border-radius: 1.1rem 3px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+.add-tasks input {
+  width: 80%;
+  padding: 7px 30px;
+  border: 1px solid #1d9ce5;
+  outline: none;
+  color: #333;
+  border-radius: 3px;
+  text-transform: capitalize;
+}
+.add-tasks button {
+  width: 20%;
+  background-color: #1d9ce5;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.new-tasks {
+  width: 100%;
+  margin-top: 1rem;
+  min-height: 40px;
+  border-radius: 3px 1.1rem;
+  background: rgba(235, 235, 235, 0.24);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+}
+.task {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 7px 30px;
+  margin: 10px 0px;
+  border-radius: 3px;
+}
+.task h3 {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+  border-bottom: 1px solid #821acc;
+  background: #fff;
+  width: 80%;
+  border-radius: 3px;
+  color: #555;
+  padding: 10px 30px;
+  font-size: 14px;
+}
+.task button {
+  background-color: #821acc;
+  border: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  line-height: 1px;
+  padding: 5px 20px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.completed {
+  text-decoration: line-through;
+}
